@@ -23,6 +23,7 @@ li{
     top: 0;
     left: 0;
     margin-bottom: 1.2rem;
+    padding-bottom: 0rem !important;
 }
 .navbar-brand{
     font-size: 1.6rem;
@@ -57,11 +58,11 @@ li{
 section.banner {
     margin-top: 4rem;
 }
-.banner-img{
-    background-image:linear-gradient(rgb(35 38 40 / 60%),rgb(51 56 59 / 61%)), url(images.img/mbr-33.jpg);
+.banner-img {
+    background-image: linear-gradient(rgb(35 38 40 / 16%),rgb(51 56 59 / 20%)), url(images.img/BACKGROUND-IMG.jpg);
     width: 100%;
     padding-top: 155px;
-    padding-bottom: 120px;   
+    padding-bottom: 120px;
     background-size: 100% 100%;
 }
 .banner-content{
@@ -122,19 +123,20 @@ section.banner {
 }
 .Service{
     text-align: center;
+    margin-bottom: 2rem;
 }
 .Service img{
     width: 100%;
     object-fit: cover;
+    height: 440px;
 }
 .Service h5{
     font-weight: 600;
     font-weight: 1.8rem;
-    margin: 2.225rem 0rem;
+    margin: 1.5rem 0rem;
 }
 .Service p{
     font-size: 1.1rem;
-    margin: 1.8rem 0rem;
     color: rgb(150, 140, 140);
     line-height: 1.8;
 }
@@ -149,7 +151,7 @@ section.banner {
 
 .mbr-row{            
     display: flex;    
-    margin-top: 5.5rem; 
+    margin-top: 1.5rem; 
 }
 .counterimg{
     background-image: url(./images.img/mbr-26.jpg);
@@ -436,8 +438,11 @@ section.banner {
 .headdd h2{
     color: white !important;
 }
-.cardps{
+.cardps {
     margin-top: 1.5rem;
+    padding: 49px;
+    border: 2px solid #0000003d;
+    border-radius: 20px;
 }
 .cardcontent{
     padding-top: 2rem;
@@ -613,15 +618,139 @@ footer{
     font-family: 'Source Sans Pro',sans-serif;
     text-align: center;
 }
+/* .about_content ul li span{
+    text-align: justify;
+} */
+
+.about_content ul {
+    position: relative;
+    padding-left: 20px; /* To give space for the arrows */
+}
+
+.about_content ul li {
+    text-align: justify;
+    position: relative; /* Needed for positioning the pseudo-element */
+    padding-left: 20px; /* Space for the arrow */
+    line-height: 35px;
+}
+.Servicees_images img {
+    width: 100%;
+    object-fit: cover;
+    height: 280px;
+}
+
+.about_content ul li:before {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    font: 14px/1 FontAwesome;
+    color: #164bff;
+    content: "\f105"; /* FontAwesome arrow icon */
+    z-index: 0;
+    cursor: pointer;
+}
+.pricees {
+    font-size: 40px;
+    color: blue;
+}
+.price_card_content p{
+    font-size: 22px;
+}
+.price_card_content {
+    padding-left: 15px;
+}
+.price_card_content {
+    padding-left: 15px;
+}
+.main_cards {
+    display: flex;
+    justify-content: start;
+}
+.price_card_content button {
+    background-color: #164bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 6px 21px;
+}
+.price_card_content button a,
+.price_card_content button a:visited,
+.price_card_content button a:hover,
+.price_card_content button a:active {
+    color: white !important;
+    text-decoration: none;
+}
+
+.htwoss {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 1.5rem 0rem;
+    text-align: center;
+}
+.mapimg {
+    background-color: #f3f3f3;
+}
+.contact_us_section {
+    text-align: center;
+    padding: 41px;
+}
+.contact_inputs {
+    margin-bottom: 15px;
+}
+.contact_inputs input {
+    padding: 10px 35px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 10px;
+}
+.contact_us_section p{
+    font-size: 15px;
+    color: blue;
+    word-spacing: 3px;
+}
+.contact_us_section h4{
+    font-size: 20px;
+    color: red;
+    margin-bottom: 16px;
+}
+.submit_button{
+    background-color: #164bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 6px 21px;
+}
+.privacy_pages h3{
+    color: red;
+}
+.privacy_pages ul li a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.privacy_pages ul li a:hover{
+    color: blue;
+}
+.footer-icon ul li{
+    cursor: pointer;
+}
 
 
 
 
 
-
-
-
-
+/* media query start  */
 @media (max-width:1199px){
     .content p{
         word-spacing: 2px;
@@ -785,6 +914,32 @@ footer{
         padding-top: 30px;
         padding-bottom: 0px;
     }
+    .contact_inputs input{
+        margin-bottom: 10px;
+    }
+    .htwo{
+        margin: 1.5rem 0rem;
+    }
+}
+.main_privacyPage {
+    margin-top: 5rem;
+}
+.privacy_content h2{
+    color: red;
+}
+.privacy_content .listing h4{
+    color: blue;
+    font-weight: 600;
+}
+.privacy_content .listing .main_content h6{
+    font-size: 19px;
+    font-weight: 600;
+}
+.listing ul li strong{
+    margin-right: 10px;
+}
+.contactus_page_dif{
+    margin: 2rem 0rem;
 }
 
 
